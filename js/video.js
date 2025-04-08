@@ -13,7 +13,7 @@ window.addEventListener("load", function() {
 document.querySelector("#play").addEventListener("click", function() {
 	video.play();
 	video.volume = document.querySelector("#slider").value / 100;
-	volume.innerHTML = document.querySelector("#slider").value;
+	volume.innerHTML = document.querySelector("#slider").value + "%";
 	console.log("Play Video with volume", video.volume);
 });
 
